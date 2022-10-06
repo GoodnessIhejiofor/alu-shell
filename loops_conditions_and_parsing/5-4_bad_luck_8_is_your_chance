@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# this script displays Best School loops from 1 to 10 and prints Best Schoolfor each iteration except the 4th and 8th loop. It uses while loop and if, elif, and else statements
+i=1
+while [ $i -lt 11 ]
+  do 
+     if [ $i -eq 4 ]
+     then
+        echo "bad luck"
+     elif [ $i -eq 8 ]
+     then
+        echo "good luck"
+     else
+        echo "Best School"
+     fi
+     ((i=i+1))
+done
